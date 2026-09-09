@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CIF_ACK | Verificación de integridad documental</title>
+<link rel="stylesheet" href="css/cif-ack.css">
+</head>
+<body>
+<header><div class="wrap brand">
+  <div class="mark">CIF</div>
+  <div><strong>CIF_ACK</strong><div class="small">Constancia de Integridad de Firma</div></div>
+</div></header>
+<main class="wrap">
+  <div class="card">
+    <h1>Verificación de integridad documental</h1>
+    <p>CIF_ACK permite consultar un registro de integridad y, cuando se dispone del archivo PDF, calcular localmente su huella SHA-256 para compararla con la registrada.</p>
+    <p><strong>Importante:</strong> la sola consulta de un registro no acredita la integridad del archivo. La validación criptográfica exige comparar la huella del PDF recibido con la huella almacenada.</p>
+  </div>
+
+  <div class="card">
+    <h2>Cómo funciona</h2>
+    <ol>
+      <li>Escanee el QR incluido en la constancia CIF_ACK.</li>
+      <li>Abra la URL de verificación.</li>
+      <li>Compruebe que el registro corresponda al documento y se encuentre vigente.</li>
+      <li>Seleccione el PDF recibido.</li>
+      <li>El navegador calcula localmente SHA-256 y compara el resultado con el registro.</li>
+    </ol>
+    <p class="small">El archivo seleccionado no se transmite al servidor: el cálculo se realiza en el navegador mediante Web Crypto API.</p>
+  </div>
+</main>
+<footer class="wrap">CIF_ACK — Sistema de referencia y validación de integridad documental.</footer>
+</body>
+</html>

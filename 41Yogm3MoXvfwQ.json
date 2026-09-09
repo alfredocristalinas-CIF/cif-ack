@@ -1,0 +1,11 @@
+{
+  "version": "CIF_ACK-1.0",
+  "id": "ACK/01/26",
+  "token": "41Yogm3MoXvfwQ",
+  "documento": "Formato de Actualización de Datos del Asociado",
+  "fecha_documento": "2026-09-09",
+  "algoritmo": "SHA-256",
+  "hash": "94ea670d8b574304507835e2315f3c55db1fb562cf1666d18ddcb00180fa2a7b",
+  "estado": "VIGENTE",
+  "nota": "La consulta del registro no implica por sí sola validación criptográfica. La integridad se confirma al comparar el SHA-256 del archivo presentado con la huella registrada."
+}

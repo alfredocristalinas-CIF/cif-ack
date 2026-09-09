@@ -1,0 +1,11 @@
+{
+  "version": "CIF_ACK-1.0",
+  "id": "ACK/XX/YY",
+  "token": "TOKEN_ALEATORIO",
+  "documento": "Descripción genérica del documento",
+  "fecha_documento": "AAAA-MM-DD",
+  "algoritmo": "SHA-256",
+  "hash": "64_CARACTERES_HEXADECIMALES",
+  "estado": "VIGENTE",
+  "nota": "La integridad se confirma al comparar el SHA-256 del archivo presentado con la huella registrada."
+}
