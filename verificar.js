@@ -17,7 +17,7 @@ async function sha256File(file){
 (async function init(){
   const lookup = document.getElementById("lookup");
   const token = qs("t");
-  if(!token || !/^[A-Za-z0-9]{6,64}$/.test(token)){
+  if(!token || !/^[A-Za-z0-9_-]{6,64}$/.test(token)){
     setStatus(lookup, "No se proporcionó un identificador de consulta válido.", "bad");
     return;
   }
