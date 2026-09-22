@@ -1,0 +1,11 @@
+{
+  "version": "CIF_ACK-1.0",
+  "id": "ACK/02/26",
+  "token": "ZcjtJx-W2KW6asqm",
+  "documento": "Comentarios y Observaciones a los lineamientos",
+  "fecha_documento": "2026-09-22",
+  "algoritmo": "SHA-256",
+  "hash": "65c8ed271f96d8a5ba6acaa69399b72c8b4ddbaa474ec8661685a0e45b1c6269",
+  "estado": "VIGENTE",
+  "nota": "La consulta del registro no implica por sí sola validación criptográfica. La integridad se confirma al comparar el SHA-256 del archivo presentado con la huella registrada."
+}
