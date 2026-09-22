@@ -1,0 +1,11 @@
+{
+  "version": "CIF_ACK-1.0",
+  "id": "ACK/03/26",
+  "token": "84c8jsGGLNzcxN3B",
+  "documento": "Lineamientos para el Ingreso de Nuevos Académicos",
+  "fecha_documento": "2026-09-22",
+  "algoritmo": "SHA-256",
+  "hash": "f21063c1d4cf390ef3569b728c126c0284c26e347abe7e5c3b8b53b893d2b54f",
+  "estado": "VIGENTE",
+  "nota": "La consulta del registro no implica por sí sola validación criptográfica. La integridad se confirma al comparar el SHA-256 del archivo presentado con la huella registrada."
+}
