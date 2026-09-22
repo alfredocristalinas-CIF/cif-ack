@@ -1,54 +1,36 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CIF_ACK | Verificar documento</title>
-<link rel="stylesheet" href="css/cif-ack.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>CIF_ACK | Verificar documento</title>
+  <link rel="stylesheet" href="css/cif-ack.css?v=3">
 </head>
 <body>
-<header><div class="wrap brand">
-  <div class="mark">CIF</div>
-  <div><strong>CIF_ACK</strong><div class="small">Verificador de integridad</div></div>
-</div></header>
-
+<header><div class="wrap brand"><div class="mark">CIF</div><div><strong>CIF_ACK</strong><div class="small">Verificador de integridad</div></div></div></header>
 <main class="wrap">
   <div class="card">
     <h1>Registro CIF_ACK</h1>
     <div id="lookup" class="status neutral">Consultando registro…</div>
     <dl class="meta" id="meta" hidden>
-      <dt>Identificador</dt><dd id="id"></dd>
-      <dt>Documento</dt><dd id="doc"></dd>
-      <dt>Fecha del documento</dt><dd id="date"></dd>
-      <dt>Estado del registro</dt><dd id="state"></dd>
+      <dt>Identificador</dt><dd id="id"></dd><dt>Documento</dt><dd id="doc"></dd>
+      <dt>Fecha del documento</dt><dd id="date"></dd><dt>Estado del registro</dt><dd id="state"></dd>
       <dt>Algoritmo</dt><dd id="algo"></dd>
     </dl>
-    <div id="hashBlock" hidden>
-      <strong>Huella registrada</strong>
-      <div class="hash" id="expected"></div>
-    </div>
+    <div id="hashBlock" hidden><strong>Huella registrada</strong><div class="hash" id="expected"></div></div>
   </div>
-
   <div class="card">
     <h2>Verificación criptográfica</h2>
     <p>Seleccione el PDF recibido. Su navegador calculará la huella SHA-256 y la comparará con la registrada en CIF_ACK.</p>
     <input id="file" type="file" accept=".pdf,application/pdf">
     <button id="verify" disabled>Verificar integridad</button>
     <div id="result" class="status neutral">Aún no se ha seleccionado ni verificado un archivo.</div>
-    <div id="actualWrap" hidden>
-      <p><strong>Huella calculada del archivo seleccionado</strong></p>
-      <div class="hash" id="actual"></div>
-    </div>
+    <div id="actualWrap" hidden><p><strong>Huella calculada del archivo seleccionado</strong></p><div class="hash" id="actual"></div></div>
     <p class="small">El archivo no se carga al servidor. El cálculo se realiza localmente mediante Web Crypto API.</p>
   </div>
-
-  <div class="card">
-    <h2>Alcance</h2>
-    <p>La coincidencia SHA-256 permite comprobar que el archivo sometido a revisión es binariamente idéntico al archivo registrado. Por sí sola no acredita identidad, autoría, firma electrónica avanzada ni fecha cierta.</p>
-  </div>
+  <div class="card"><h2>Alcance</h2><p>La coincidencia SHA-256 permite comprobar que el archivo sometido a revisión es binariamente idéntico al archivo registrado. Por sí sola no acredita identidad, autoría, firma electrónica avanzada ni fecha cierta.</p></div>
 </main>
-
 <footer class="wrap">CIF_ACK — Constancia de Integridad de Firma.</footer>
-<script src="js/verificar.js"></script>
-</body>
-</html>
+<script src="js/verificar.js?v=3"></script>
+</body></html>
